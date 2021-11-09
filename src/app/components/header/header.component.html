@@ -1,0 +1,22 @@
+<div class="position-relative">
+  <h2 class="text-center">Books Manager</h2>
+
+  <div class="position-absolute top-0 end-0 mt-2">
+
+    <button
+      *ngIf="isConnected && !isAddPage"
+      class="btn btn-outline-success me-2"
+      routerLink="/books/new">
+      AJOUTER
+    </button>
+
+    <button
+      *ngIf="isConnected"
+      class="btn btn-outline-dark"
+      (click)="onClickSignout()">
+      ME DECONNECTER
+    </button>
+
+  </div>
+
+</div>

@@ -1,0 +1,8 @@
+<app-book-form
+  *ngIf="book"
+  title="ÉDITION D'UN LIVRE"
+  submitLabel="ÉDITER"
+  [bookToEdit]="book"
+  (formSubmitted)="askToEditBook($event)"
+>
+</app-book-form>
